@@ -13,18 +13,37 @@ A calculator that uses handwritten ಕನ್ನಡ (Kannada) digits and operator
 - `src/Main.ipynb` consists of loading the trained model state and using it to make predictions for the calculator app.
 
 ### Requirements -
+
+For Linux
 ```bash
 conda create --name <env> --file requirements.txt
+conda activate <env>
 pip install customtkinter
 ```
 
+For Linux / others
+```shell
+conda create -c conda-forge -c pytorch --name <env> --file reqs.txt
+conda activate <env>
+pip install customtkinter
+```
+
+- python 3.9.18
+- pytorch 2.3.1
+- opencv 4.10.0
+- numpy 2.0.0
+- pillow 10.3.0
+- customtkinter 5.2.2
+- pandas 2.2.2 [ Training only ]
+- torchvision 0.18.1 [ Training only ]
+
 ### Instructions -
-- Clone the repo and run the Jupyter Notebook, `src/Main.ipynb`, or `src/Main.py`.
+- Clone the repo and run the Jupyter Notebook, `src/Main.ipynb`, or run `src/Main.py`.
 - You can use Kannada digits `೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯`, operators `+ - × /`, decimal point `.` and parentheses `()`.
 - You can also use `××` for exponentiation and `//` for floor division.
-- To train the model yourself, download the data, unzip, move it into `datasets` directory, and then run the Jupyter Notebook `src/ConvNet.ipynb`. 
+- To train the model yourself, download the data, unzip, move it into the `datasets` directory, and then run the Jupyter Notebook `src/ConvNet.ipynb`. 
 
-    #### NOTE:
+    > NOTE:
     Depending on your screen resolution, you may need to change canvas size, brush delta/displacement and brush thickness to get more accurate results.
 
 ### Data

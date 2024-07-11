@@ -349,7 +349,7 @@ main_font = "Liberation Mono"
 font_size = 30
 
 
-# ##### To rerun the calculator, you need to just rerun the below cell. 
+# ##### To rerun the calculator, you need to rerun only the cell below. 
 
 # In[19]:
 
